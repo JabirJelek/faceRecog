@@ -1,0 +1,40 @@
+==================================================
+RUN COMPLETION SUMMARY
+==================================================
+Completion Time: 2026-01-21 13:35:32
+Run ID: 2026-01-21_13-33-25
+Status: SUCCESS
+
+FOLDER STRUCTURE
+==================================================
+Run Folder: D:\RaihanFarid\Dokumen\faceRecog\process-run\Run_System2026-01-21_13-33-25
+├── logs\
+│   ├── run_2026-01-21_13-33-25.log          (This main log file)
+│   ├── python_output.txt           (Full Python script output)
+│   └── completion_summary.txt      (This summary)
+├── script_output\                  (Python script's working directory)
+│   └── [Output folders created by Python]
+└── metadata.json                   (Run configuration metadata)
+
+LOG FILES
+==================================================
+1. Main Execution Log: D:\RaihanFarid\Dokumen\faceRecog\process-run\Run_System2026-01-21_13-33-25\logs\run_2026-01-21_13-33-25.log
+2. Python Output: D:\RaihanFarid\Dokumen\faceRecog\process-run\Run_System2026-01-21_13-33-25\logs\python_output.txt
+3. Python Exit Code: 0
+
+EXECUTION DETAILS
+==================================================
+Virtual Environment: D:\RaihanFarid\Dokumen\faceRecog\.venv
+Python Script: D:\RaihanFarid\Dokumen\faceRecog\run_py\modular\entry_multi-USED-Magick.py
+Arguments: --multi-source
+Start Time: 2026-01-21 13:33:25
+End Time: 2026-01-21 13:35:32
+Duration: 00:02:06
+
+SCRIPT OUTPUT LOCATION
+==================================================
+Any folders/files created by the Python script should be located in:
+D:\RaihanFarid\Dokumen\faceRecog\process-run\Run_System2026-01-21_13-33-25\script_output
+
+NOTE: For debugging, check python_output.txt for detailed error messages.
+==================================================

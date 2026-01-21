@@ -1,0 +1,11 @@
+{
+  "start_time": "2026-01-21 13:33:25",
+  "python_script": "D:\\RaihanFarid\\Dokumen\\faceRecog\\run_py\\modular\\entry_multi-USED-Magick.py",
+  "run_folder": "D:\\RaihanFarid\\Dokumen\\faceRecog\\process-run\\Run_System2026-01-21_13-33-25",
+  "virtual_env": "D:\\RaihanFarid\\Dokumen\\faceRecog\\.venv",
+  "arguments": "--multi-source",
+  "run_id": "2026-01-21_13-33-25",
+  "end_time": "2026-01-21 13:35:32",
+  "duration": "00:02:06",
+  "exit_code": 0
+}

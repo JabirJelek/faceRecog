@@ -4,12 +4,12 @@
 # ==============================================
 
 # ========== CONFIGURATION ==========
-$VENV_ROOT = "D:\RaihanFarid\Dokumen\Object Detection\testVenv"
-$PYTHON_SCRIPT = "D:\RaihanFarid\Dokumen\Object Detection\3.1_FaceRecog\run_py\modular\entry_multi-USED-Magick.py"
+$VENV_ROOT = "D:\RaihanFarid\Dokumen\faceRecog\.venv"
+$PYTHON_SCRIPT = "D:\RaihanFarid\Dokumen\faceRecog\run_py\modular\entry_multi-USED-Magick.py"
 $ARG1 = "--multi-source"
 
 # Base path for all runs (outside virtual environment)
-$RUNS_BASE_PATH = "D:\RaihanFarid\Dokumen\Process-Run"
+$RUNS_BASE_PATH = "D:\RaihanFarid\Dokumen\faceRecog\process-run"
 # ===================================
 
 # Create runs base directory if it doesn't exist
