@@ -4,8 +4,8 @@
 # ==============================================
 
 # ========== CONFIGURATION ==========
-$VENV_ROOT = "D:\RaihanFarid\Dokumen\0_classified_with_deepface\temp\.venv"
-$PYTHON_SCRIPT = "D:\RaihanFarid\Dokumen\0_classified_with_deepface\temp\foldering_image_script.py"
+$VENV_ROOT = "A:\SCMA\3-APD\fromAraya\faceRecog1\faceRecog\.venv"
+$PYTHON_SCRIPT = "A:\SCMA\3-APD\fromAraya\faceRecog1\faceRecog\run_py\modular\entry_multi-USED-Laptop.py"
 
 # ENHANCED: Use an array for multiple arguments
 # Each argument should be a separate element in the array
@@ -24,14 +24,14 @@ $PYTHON_SCRIPT = "D:\RaihanFarid\Dokumen\0_classified_with_deepface\temp\folderi
 
 # Alternative: Use hashtable for named parameters (more readable)
 $PYTHON_PARAMS = @{
-    "--database" = "D:\RaihanFarid\Dokumen\0_classified_with_deepface\temp\current_database-Copy"
-    "--input" = "D:\RaihanFarid\Dokumen\0_classified_with_deepface\temp\process-run\Run_Classified2026-01-21_15-11-08\script_output\classified_output"
-    # "--multi-source" = $null #Null is for Flag parameter
+    # "--database" = "D:\RaihanFarid\Dokumen\0_classified_with_deepface\temp\current_database-Copy"
+    # "--input" = "D:\RaihanFarid\Dokumen\0_classified_with_deepface\temp\process-run\Run_Classified2026-01-21_15-11-08\script_output\classified_output"
+    "--multi-source" = $null #Null is for Flag parameter
 
 }
 
 # Base path for all runs (outside virtual environment)
-$RUNS_BASE_PATH = "D:\RaihanFarid\Dokumen\0_classified_with_deepface\temp\process-run"
+$RUNS_BASE_PATH = "A:\SCMA\3-APD\fromAraya\faceRecog1\faceRecog\process-run"
 # ===================================
 
 # Helper function to convert hashtable to argument array
@@ -59,7 +59,7 @@ if (-not (Test-Path $RUNS_BASE_PATH)) {
 
 # Generate run folder with timestamp
 $timestamp = Get-Date -Format "yyyy-MM-dd_HH-mm-ss"
-$RUN_FOLDER_NAME = "Run_Classified$timestamp"
+$RUN_FOLDER_NAME = "Run_Process_laptop$timestamp"
 $RUN_FOLDER_PATH = Join-Path $RUNS_BASE_PATH $RUN_FOLDER_NAME
 
 # Create run folder structure

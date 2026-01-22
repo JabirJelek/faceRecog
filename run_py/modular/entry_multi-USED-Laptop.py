@@ -505,7 +505,7 @@ def get_default_config():
         
         # ========== SERVER PUSH CONFIGURATION ==========        
         'server_push_enabled': True,
-        'server_endpoint': 'https://vps.scasda.my.id/accounting/public/api/submit_ai_detection',
+        'server_endpoint': 'https://vps.casda.my.id/accounting/public/api/submit_ai_detection',
         'server_push_cooldown': 5,
         'server_timeout': 10,
         'server_retry_attempts': 10,
@@ -627,23 +627,32 @@ def get_advanced_sources_config():
         #     'cctv_name':None,
         # },
         
-        '3': {
-            'url': 'rtsp://admin:Admin888@192.168.0.2:554/Streaming/Channels/101',
-            'description': 'Atas Server Gedangan',
-            'priority': 'medium',
-            'processing_scale':1,            
-            'buffer_size': 100,
-            'cctv_name':None,
-        },
+        # '3': {
+        #     'url': 'rtsp://admin:Admin888@192.168.0.2:554/Streaming/Channels/101',
+        #     'description': 'Atas Server Gedangan',
+        #     'priority': 'medium',
+        #     'processing_scale':1,            
+        #     'buffer_size': 100,
+        #     'cctv_name':None,
+        # },
         
-        '4': {
-            'url': 'rtsp://admin:Admin888@192.168.0.2:554/Streaming/Channels/601',
-            'description': 'Ruang Produksi',
+        # '4': {
+        #     'url': 'rtsp://admin:Admin888@192.168.0.2:554/Streaming/Channels/601',
+        #     'description': 'Ruang Produksi',
+        #     'priority': 'medium',
+        #     'processing_scale':1,            
+        #     'buffer_size': 100,
+        #     'cctv_name':None,
+        # },                
+        
+        '5': {
+            'url': '0',
+            'description': 'Main Camera',
             'priority': 'medium',
             'processing_scale':1,            
             'buffer_size': 100,
             'cctv_name':None,
-        },                
+        },           
     }
         
 def load_custom_config(config_path: str = None) -> Dict:

@@ -1,0 +1,808 @@
+WARNING:tensorflow:From A:\SCMA\3-APD\fromAraya\faceRecog1\faceRecog\.venv\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2026-01-22 15:39:47,815 - face_recog_modular2.tracking.progressive_mask_detector - INFO - Enhanced Progressive Mask Detector initialized
+2026-01-22 15:39:47,815 - face_recog_modular2.tracking.progressive_mask_detector - INFO -   State holding duration: 15.0s
+2026-01-22 15:39:47,815 - face_recog_modular2.tracking.progressive_mask_detector - INFO -   Minimum stability to commit: 0.15
+2026-01-22 15:39:47,815 - face_recog_modular2.tracking.progressive_mask_detector - INFO -   Adaptive label weighting enabled
+2026-01-22 15:39:47,815 - face_recog_modular2.tracking.tracking_manager - INFO - Policy Thresholds - min_violation_frames: 1, min_violation_duration: 1s
+2026-01-22 15:39:47,816 - face_recog_modular2.tracking.tracking_manager - INFO - Simplified TrackingManager initialized
+
+============================================================
+≡ƒûÑ∩╕Å  SYSTEM INFORMATION
+============================================================
+≡ƒÆ╗ CPU Cores: 12
+≡ƒÆ╛ Total RAM: 7.4 GB
+≡ƒÄ« GPU: No CUDA devices available
+≡ƒÉì Python Version: 3.12.1
+≡ƒöÑ PyTorch Version: 2.9.1+cpu
+≡ƒæü∩╕Å  OpenCV Version: 4.13.0
+≡ƒöº ONNX Runtime Version: 1.23.2
+============================================================
+
+≡ƒöì Checking GPU availability...
+ΓÜá∩╕Å  CUDA not available, falling back to CPU
+≡ƒöº Available ONNX Providers: ['AzureExecutionProvider', 'CPUExecutionProvider']
+ΓÜá∩╕Å  ONNX CUDA Execution Provider not available
+≡ƒöä Using default multi-source configuration
+
+≡ƒÄ» MULTI-SOURCE CONFIGURATION
+==================================================
+≡ƒô╣ 5:
+   URL: 0
+   Description: Main Camera
+   Priority: medium
+   CCTV Name: None
+   Processing Scale: 1
+==================================================
+
+≡ƒöì Testing multi-stream connections for 1 sources...
+
+≡ƒô╣ Testing source: 5
+≡ƒÄ¼ StreamManager initialized with robust reconnection handling
+≡ƒöì Initializing camera stream: 0
+≡ƒô╖ Attempting to open camera 0 with backend 700
+Γ£à Camera 0 opened successfully
+Γ¥ñ∩╕Å  Stream health monitor started
+≡ƒôè Stream Info:
+   Type: camera
+   Resolution: 640x480
+   FPS: 30.0
+   Source: 0
+Γ£à Stream initialized successfully: 0
+   Γ£à Frame 1: (480, 640, 3)
+   Γ£à Frame 2: (480, 640, 3)
+   Γ£à Frame 3: (480, 640, 3)
+Γ£à Source 5 test successful
+≡ƒö┤ Releasing StreamManager...
+≡ƒö┤ StreamManager released
+
+≡ƒôè STREAM TEST SUMMARY:
+   Γ£à Successful: 1 sources
+   Γ¥î Failed: 0 sources
+≡ƒö┤ Releasing StreamManager...
+≡ƒö┤ StreamManager released
+
+≡ƒöä Creating face recognition system...
+Γ£à ConfigManager initialized with unified configuration system
+ΓÜá∩╕Å  Config for 'robust' not found, using base config
+
+≡ƒöì Verifying GPU usage...
+≡ƒÄ» YOLO Model Device: cpu
+≡ƒÄ» ONNX Mask Detector Providers: ['CPUExecutionProvider']
+≡ƒÄ» DeepFace Backend: Could not determine
+≡ƒÄ» PerformanceManager initialized with momentum-based historical scaling
+   - Scale range: 0.50 to 3.00
+   - Cooldown range: 2.0s to 10.0s
+ΓÜÖ∩╕Å BaseProcessor initialized with mandatory performance-managed scaling
+≡ƒÄ» Initial scale: 1.00 (from PerformanceManager)
+≡ƒÄ» PerformanceManager initialized with momentum-based historical scaling
+   - Scale range: 0.50 to 3.00
+   - Cooldown range: 2.0s to 10.0s
+≡ƒöè Duration-aware batch alerts: 1 frames threshold
+   Batch logic: window=5s, min=2
+≡ƒÄ» MultiSourceRealTimeProcessor initialized with enhanced thread safety
+≡ƒöè Alert config updated with batch logic
+   Batch: window=5s, min=2
+   Names: max=4
+≡ƒöè Audio alert system configured
+≡ƒÄ» Face tracking system configured for all sources
+≡ƒôñ Server push configured for 0 sources
+≡ƒôè Multi-source logging system configured
+Γ£à Violation verification configured: enabled=True
+
+============================================================
+≡ƒÄ» MULTI-SOURCE SYSTEM CONFIGURATION STATUS
+============================================================
+≡ƒôè Sources: 1 cameras configured
+≡ƒöì Detection: Confidence=0.5, Recognition Threshold=0.8
+≡ƒÄ» Face Tracking: ENABLED
+Γ£à Violation Verification: ENABLED
+   - Min Duration: 1s
+   - Min Frames: 1
+   - Confidence Threshold: 0.15
+≡ƒô¥ Logging: ENABLED
+≡ƒöè Alerts: ENABLED
+≡ƒôñ Server Push: ENABLED
+≡ƒÉ¢ Debug: DISABLED
+≡ƒû╝∩╕Å  Display Layout: grid
+≡ƒÄ« GPU Acceleration: DISABLED
+============================================================
+
+≡ƒôñ SERVER PUSH CONFIGURATION
+========================================
+   Endpoint: https://vps.casda.my.id/accounting/public/api/submit_ai_detection
+   Cooldown: 5s
+   Timeout: 10s
+   Retry Attempts: 10
+   CCTV Name: Default
+   JSON Structure:
+     {
+       "filename": "string",
+       "image_format": "jpg",
+       "image_data": "base64_string",
+       "detected_name": "string",
+       "cctv_name": "string"
+     }
+========================================
+
+==================================================
+≡ƒæñ MULTI-SOURCE TRACKING SYSTEM STATUS
+==================================================
+==================================================
+
+==================================================
+≡ƒöè AUDIO ALERT SYSTEM STATUS
+==================================================
+  enabled: True
+  server_url: https://vps.casda.my.id/actions/a_notifikasi_suara_speaker.php
+  cooldown_seconds: 15
+  min_violation_frames: 1
+  min_violation_seconds: 1
+  max_gap_frames: 10
+  alert_language: id
+  alert_style: formal
+  alert_timeout_seconds: 2
+  max_names_in_alert: 4
+  batch_window_seconds: 5
+  min_batch_size: 2
+  image_log_interval: 5
+  min_save_interval: 1.0
+  current_batch_size: 0
+  batch_violators: []
+==================================================
+≡ƒû╝∩╕Å  Display size set to 1280x720 using fit_to_screen method
+
+≡ƒöì FINAL SYSTEM READINESS CHECK
+========================================
+≡ƒô╣ Sources: 1 cameras ready
+   - 5
+≡ƒÄ« GPU: CPU MODE
+≡ƒôñ Server Push: READY
+≡ƒöè Audio Alerts: READY
+≡ƒÄ» Tracking: READY
+Γ£à Violation Verification: READY
+========================================
+
+≡ƒÄ« VERIFICATION CONTROLS:
+   [V] - Toggle violation verification
+   [S] - Show verification statistics
+   [M] - Start verification monitoring
+
+≡ƒÄ« MULTI-SOURCE CONTROLS:
+   [m] - Cycle through display layouts (grid, horizontal, vertical)
+   [n] - Toggle source health display
+   [0] - Show source health report
+   [l] - Toggle logging
+   [v] - Toggle voice alerts
+   [p] - Toggle performance stats
+   [d] - Toggle debug mode
+   [q] - Quit
+
+ΓÅ│ Starting multi-source processing in 3 seconds...
+
+≡ƒöì ENSURING IMAGE LOGGERS ARE CREATED FOR ALL SOURCES
+
+≡ƒöì PRE-START CCTV NAME CHECK
+
+≡ƒöì DEBUG CCTV NAME STATUS
+==================================================
+Active sources: []
+Source configs: []
+Image loggers: []
+==================================================
+
+≡ƒÄ» ADDING SOURCES WITH DYNAMIC CCTV NAMING
+==================================================
+≡ƒô╣ Adding source: 5
+   ≡ƒöì CCTV name extraction test: Camera-0
+≡ƒôü Stored configuration for 5
+≡ƒöì Final config keys for 5: ['url', 'description', 'priority', 'processing_scale', 'buffer_size', 'cctv_name', 'detection_model_path', 'embeddings_db_path', 'mask_model_path', 'detection_confidence', 'recognition_threshold', 'mask_detection_threshold', 'detection_iou', 'min_face_size', 'max_faces_per_frame', 'enable_person_detection', 'person_detection_confidence_threshold', 'display_layout', 'max_display_sources', 'processing_width', 'processing_height', 'maintenance_interval', 'violation_verification_enabled', 'min_violation_duration', 'min_violation_frames', 'violation_confidence_threshold', 'log_interval', 'enable_logging', 'enable_image_logging', 'image_log_interval', 'max_images_per_session', 'min_save_interval', 'server_push_enabled', 'server_endpoint', 'server_push_cooldown', 'server_timeout', 'server_retry_attempts', 'server_retry_delay', 'enable_image_resize', 'image_resize_width', 'image_resize_height', 'image_resize_method', 'enable_voice_alerts', 'alert_server_url', 'alert_cooldown_seconds', 'min_violation_seconds', 'max_gap_frames', 'alert_language', 'alert_style', 'enable_individual_alerts', 'enable_group_alerts', 'alert_timeout_seconds', 'alert_verification_required', 'min_alert_confidence', 'alert_buffer_size', 'enable_multi_scale', 'enable_temporal_fusion', 'enable_quality_aware', 'embedding_model', 'enable_base64_logging', 'base64_quality', 'headless_mode', 'use_gpu', 'gpu_device', 'annotation_box_thickness', 'annotation_text_thickness', 'annotation_min_text_scale', 'annotation_max_text_scale']
+≡ƒÄ¼ StreamManager initialized with robust reconnection handling
+≡ƒöì Initializing camera stream: 0
+≡ƒô╖ Attempting to open camera 0 with backend 700
+Γ£à Camera 0 opened successfully
+Γ¥ñ∩╕Å  Stream health monitor started
+≡ƒôè Stream Info:
+   Type: camera
+   Resolution: 640x480
+   FPS: 30.0
+   Source: 0
+Γ£à Stream initialized successfully: 0
+≡ƒîÉ Global tracking config available: True
+≡ƒÄ» FINAL Tracking configuration for 5:
+   Total keys in tracking_config: 23
+   Progressive mask enabled: True
+   Progressive mask parameters: 20
+     mask_buffer_size: 200
+     min_mask_frames: 2
+     mask_confidence_threshold: 0.1
+≡ƒöº [TrackingManager] Received config with keys: ['enabled', 'fairness_enabled', 'confidence_frames', 'cooldown_seconds', 'min_iou', 'max_recognitions_per_person', 'recent_window_size', 'enable_velocity_prediction', 'enable_appearance_matching', 'max_track_age', 'enable_person_tracking', 'person_track_confidence', 'person_track_max_age', 'person_iou_threshold', 'bytetrack_track_thresh', 'bytetrack_track_buffer', 'bytetrack_match_thresh', 'bytetrack_min_box_area', 'progressive_mask', 'violation_verification_enabled', 'min_violation_duration', 'min_violation_frames', 'violation_confidence_threshold']
+ΓÜá∩╕Å  Config appears to be tracking config itself, using as tracking_config
+≡ƒöº [TrackingManager] Tracking config: ['enabled', 'fairness_enabled', 'confidence_frames', 'cooldown_seconds', 'min_iou', 'max_recognitions_per_person', 'recent_window_size', 'enable_velocity_prediction', 'enable_appearance_matching', 'max_track_age', 'enable_person_tracking', 'person_track_confidence', 'person_track_max_age', 'person_iou_threshold', 'bytetrack_track_thresh', 'bytetrack_track_buffer', 'bytetrack_match_thresh', 'bytetrack_min_box_area', 'progressive_mask', 'violation_verification_enabled', 'min_violation_duration', 'min_violation_frames', 'violation_confidence_threshold']
+Γ£à Found progressive_mask at root level
+≡ƒöº [TrackingManager] Passing to ProgressiveMaskDetector:
+   Config: {'mask_buffer_size': 200, 'min_mask_frames': 2, 'occlusion_timeout': 3.0, 'mask_confidence_threshold': 0.1, 'mask_consistency_threshold': 0.1, 'min_stability_to_commit': 0.15, 'state_hold_duration': 15.0, 'verification_grace_ratio': 0.1, 'spatial_consistency_weight': 0.3, 'max_bbox_variation': 0.45, 'extreme_confidence_threshold': 0.95, 'extreme_mask_penalty': 0.8, 'extreme_no_mask_boost': 0.9, 'initial_mask_weight': 0.2, 'initial_no_mask_weight': 0.2, 'weight_increase_high_conf': 0.4, 'weight_decrease_low_conf': 0.3, 'weight_increase_opposite': 0.1, 'confidence_smoothing_factor': 0.3, 'stability_smoothing_factor': 0.2}
+   Keys: ['mask_buffer_size', 'min_mask_frames', 'occlusion_timeout', 'mask_confidence_threshold', 'mask_consistency_threshold', 'min_stability_to_commit', 'state_hold_duration', 'verification_grace_ratio', 'spatial_consistency_weight', 'max_bbox_variation', 'extreme_confidence_threshold', 'extreme_mask_penalty', 'extreme_no_mask_boost', 'initial_mask_weight', 'initial_no_mask_weight', 'weight_increase_high_conf', 'weight_decrease_low_conf', 'weight_increase_opposite', 'confidence_smoothing_factor', 'stability_smoothing_factor']
+≡ƒÄÑ Capture thread started
+≡ƒÄ¼ Frame capture started
+Γ£à Added source: 5
+Γ£à Successfully added 5 ΓåÆ Local-Camera-0
+==================================================
+
+============================================================
+≡ƒôè ALL ACTIVE SOURCES INFORMATION
+============================================================
+
+≡ƒô╣ 5:
+   ≡ƒöù URL: 0
+   ≡ƒÅ╖∩╕Å  CCTV Name: Local-Camera-0
+   ≡ƒô¥ Description: Main Camera
+   ΓÜí Active: True
+   ≡ƒÄ» Tracking: True
+   ≡ƒû╝∩╕Å  Logging: False
+   ΓÜÖ∩╕Å  Processing Scale: 1
+   ≡ƒôê FPS: 0.0
+============================================================
+
+==================================================
+≡ƒô╣ CCTV NAME MAPPING
+==================================================
+  ≡ƒƒó 5 ΓåÆ Local-Camera-0 Γ¥î
+==================================================
+
+≡ƒöä Setting up multi-source logging with dynamic CCTV names...
+≡ƒôü Setting up multi-source logging session: multi_source_20260122_153947
+
+≡ƒöì DEBUG CCTV NAME STATUS
+==================================================
+Active sources: ['5']
+Source configs: ['5']
+Image loggers: []
+
+≡ƒô╣ Source: 5
+   Cached CCTV Name: Local-Camera-0
+   ImageLogger: Γ¥î NOT CREATED
+==================================================
+≡ƒöä Set dynamic CCTV name for 5: Local-Camera-0
+≡ƒöì Creating ImageLogger for 5 with CCTV name: Local-Camera-0
+≡ƒô╣ ImageLogger initialized with CCTV name: Local-Camera-0
+≡ƒöì Setting up ImageLogger with base filename: multi_source_20260122_153947_Local-Camera-0
+Γ£à ImageLogger setup for source: 5 ΓåÆ Local-Camera-0
+≡ƒöì Verification - ImageLogger CCTV name: Local-Camera-0
+≡ƒöì Verification - ImageLogger folder: multi_source_20260122_153947_Local-Camera-0_images
+≡ƒû╝∩╕Å  Multi-source image logging ENABLED for 1 sources
+
+==================================================
+≡ƒô╣ CCTV NAME MAPPING
+==================================================
+  ≡ƒƒó 5 ΓåÆ Local-Camera-0 ≡ƒû╝∩╕Å
+==================================================
+
+≡ƒöì DEBUG CCTV NAME STATUS
+==================================================
+Active sources: ['5']
+Source configs: ['5']
+Image loggers: ['5']
+
+≡ƒô╣ Source: 5
+   Cached CCTV Name: Local-Camera-0
+   ImageLogger CCTV: Local-Camera-0
+   ImageLogger Enabled: True
+   Match: Γ£à
+==================================================
+Γ£à Multi-source specific configuration applied
+≡ƒÄ¼ Starting stabilized multi-source processing with None sources
+≡ƒÅÑ Health monitoring started
+≡ƒº╣ Periodic maintenance started
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[250, 70, 436, 328], mask='mask', conf=0.8507644534111023
+    Raw 0: bbox=[250, 70, 436, 328], identity='None', mask='mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[255, 74, 437, 325], mask='mask', conf=0.6780112981796265
+    Raw 0: bbox=[255, 74, 437, 325], identity='None', mask='mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[214, 99, 409, 368], mask='mask', conf=0.9502995014190674
+    Raw 0: bbox=[214, 99, 409, 368], identity='None', mask='mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[188, 140, 398, 473], mask='no_mask', conf=0.9511480927467346
+    Raw 0: bbox=[188, 140, 398, 473], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[241, 102, 428, 363], mask='no_mask', conf=0.5928470492362976
+    Raw 0: bbox=[241, 102, 428, 363], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[240, 106, 429, 369], mask='no_mask', conf=0.5659523606300354
+    Raw 0: bbox=[240, 106, 429, 369], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[196, 121, 383, 372], mask='no_mask', conf=0.8681730031967163
+    Raw 0: bbox=[196, 121, 383, 372], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[241, 113, 418, 358], mask='no_mask', conf=0.48864075541496277
+    Raw 0: bbox=[241, 113, 418, 358], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[246, 118, 418, 357], mask='mask', conf=0.6924145817756653
+    Raw 0: bbox=[246, 118, 418, 357], identity='None', mask='mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[249, 127, 426, 383], mask='no_mask', conf=0.6985480785369873
+    Raw 0: bbox=[249, 127, 426, 383], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[246, 128, 423, 381], mask='no_mask', conf=0.5860666036605835
+    Raw 0: bbox=[246, 128, 423, 381], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[246, 130, 423, 386], mask='no_mask', conf=0.7081300616264343
+    Raw 0: bbox=[246, 130, 423, 386], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[249, 128, 427, 382], mask='mask', conf=0.9571821093559265
+    Raw 0: bbox=[249, 128, 427, 382], identity='None', mask='mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[241, 131, 420, 382], mask='mask', conf=0.9397456049919128
+    Raw 0: bbox=[241, 131, 420, 382], identity='None', mask='mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[234, 132, 415, 379], mask='mask', conf=0.9879112243652344
+    Raw 0: bbox=[234, 132, 415, 379], identity='None', mask='mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[234, 131, 415, 382], mask='mask', conf=0.9865388870239258
+    Raw 0: bbox=[234, 131, 415, 382], identity='None', mask='mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[229, 131, 412, 386], mask='mask', conf=0.9944393634796143
+    Raw 0: bbox=[229, 131, 412, 386], identity='None', mask='mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[230, 131, 413, 406], mask='mask', conf=0.9928783774375916
+    Raw 0: bbox=[230, 131, 413, 406], identity='None', mask='mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[233, 136, 413, 383], mask='mask', conf=0.9882392883300781
+    Raw 0: bbox=[233, 136, 413, 383], identity='None', mask='mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[250, 121, 431, 378], mask='mask', conf=0.8685085773468018
+    Raw 0: bbox=[250, 121, 431, 378], identity='None', mask='mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[251, 117, 431, 367], mask='no_mask', conf=0.566375732421875
+    Raw 0: bbox=[251, 117, 431, 367], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[245, 112, 422, 362], mask='mask', conf=0.7080877423286438
+    Raw 0: bbox=[245, 112, 422, 362], identity='None', mask='mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[245, 115, 421, 362], mask='mask', conf=0.7788593173027039
+    Raw 0: bbox=[245, 115, 421, 362], identity='None', mask='mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[294, 175, 412, 339], mask='mask', conf=0.9840614199638367
+    Raw 0: bbox=[294, 175, 412, 339], identity='None', mask='mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[243, 188, 363, 344], mask='no_mask', conf=0.8463499546051025
+    Raw 0: bbox=[243, 188, 363, 344], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[250, 103, 420, 333], mask='no_mask', conf=0.526209831237793
+    Raw 0: bbox=[250, 103, 420, 333], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[263, 109, 429, 336], mask='no_mask', conf=0.717703104019165
+    Raw 0: bbox=[263, 109, 429, 336], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[262, 111, 427, 335], mask='no_mask', conf=0.7227517366409302
+    Raw 0: bbox=[262, 111, 427, 335], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[254, 111, 418, 336], mask='no_mask', conf=0.5802568197250366
+    Raw 0: bbox=[254, 111, 418, 336], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[263, 111, 425, 337], mask='no_mask', conf=0.5255029201507568
+    Raw 0: bbox=[263, 111, 425, 337], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[309, 131, 459, 314], mask='no_mask', conf=0.8435162305831909
+    Raw 0: bbox=[309, 131, 459, 314], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[310, 193, 429, 349], mask='no_mask', conf=0.870334804058075
+    Raw 0: bbox=[310, 193, 429, 349], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[294, 193, 415, 360], mask='no_mask', conf=0.5646020174026489
+    Raw 0: bbox=[294, 193, 415, 360], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[292, 190, 416, 360], mask='no_mask', conf=0.6147387027740479
+    Raw 0: bbox=[292, 190, 416, 360], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[282, 192, 408, 366], mask='no_mask', conf=0.6843635439872742
+    Raw 0: bbox=[282, 192, 408, 366], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[259, 197, 381, 363], mask='no_mask', conf=0.8697463870048523
+    Raw 0: bbox=[259, 197, 381, 363], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[262, 198, 385, 365], mask='no_mask', conf=0.8597157001495361
+    Raw 0: bbox=[262, 198, 385, 365], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[262, 199, 385, 365], mask='no_mask', conf=0.8728074431419373
+    Raw 0: bbox=[262, 199, 385, 365], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[263, 197, 386, 364], mask='no_mask', conf=0.8112574219703674
+    Raw 0: bbox=[263, 197, 386, 364], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[263, 197, 386, 364], mask='no_mask', conf=0.844027578830719
+    Raw 0: bbox=[263, 197, 386, 364], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[263, 197, 386, 363], mask='no_mask', conf=0.9162079691886902
+    Raw 0: bbox=[263, 197, 386, 363], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[264, 196, 387, 365], mask='no_mask', conf=0.7949433326721191
+    Raw 0: bbox=[264, 196, 387, 365], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[271, 189, 391, 345], mask='no_mask', conf=0.9044570922851562
+    Raw 0: bbox=[271, 189, 391, 345], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[255, 195, 379, 366], mask='no_mask', conf=0.9684550166130066
+    Raw 0: bbox=[255, 195, 379, 366], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[250, 186, 380, 358], mask='no_mask', conf=0.9788357615470886
+    Raw 0: bbox=[250, 186, 380, 358], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[256, 185, 396, 376], mask='no_mask', conf=0.9627189040184021
+    Raw 0: bbox=[256, 185, 396, 376], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[274, 190, 411, 382], mask='no_mask', conf=0.41086632013320923
+    Raw 0: bbox=[274, 190, 411, 382], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[269, 186, 404, 373], mask='no_mask', conf=0.6244625449180603
+    Raw 0: bbox=[269, 186, 404, 373], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[270, 188, 406, 375], mask='no_mask', conf=0.7265205383300781
+    Raw 0: bbox=[270, 188, 406, 375], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[269, 189, 408, 380], mask='mask', conf=0.6023452281951904
+    Raw 0: bbox=[269, 189, 408, 380], identity='None', mask='mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[268, 188, 408, 379], mask='no_mask', conf=0.5684344172477722
+    Raw 0: bbox=[268, 188, 408, 379], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[269, 189, 407, 380], mask='mask', conf=0.6127371191978455
+    Raw 0: bbox=[269, 189, 407, 380], identity='None', mask='mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[266, 186, 405, 375], mask='no_mask', conf=0.6764277815818787
+    Raw 0: bbox=[266, 186, 405, 375], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[266, 186, 404, 374], mask='no_mask', conf=0.7063317894935608
+    Raw 0: bbox=[266, 186, 404, 374], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[266, 185, 404, 374], mask='no_mask', conf=0.6310500502586365
+    Raw 0: bbox=[266, 185, 404, 374], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[267, 186, 405, 373], mask='no_mask', conf=0.6408701539039612
+    Raw 0: bbox=[267, 186, 405, 373], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[267, 185, 404, 374], mask='no_mask', conf=0.4838326573371887
+    Raw 0: bbox=[267, 185, 404, 374], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[266, 186, 404, 373], mask='no_mask', conf=0.6590888500213623
+    Raw 0: bbox=[266, 186, 404, 373], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒöì [1-FACE-SYSTEM] 1 raw detections
+    Raw 0: bbox=[266, 185, 404, 373], mask='no_mask', conf=0.6790686845779419
+    Raw 0: bbox=[266, 185, 404, 373], identity='None', mask='no_mask'
+≡ƒöì [2-TO-TRACKER] Sending 1 results to tracker
+Γ£à Result 0: Progressive data exists - status=no_mask, progress=0.00, frames=0
+≡ƒôè Progressive data coverage: 1/1 results
+≡ƒöì [3-TRACKER-RESULTS] 1 processed results
+    Tracked 0: identity='None', verified=False, hidden=False
+≡ƒ¢æ Quitting...
+≡ƒ¢æ Quitting application...
+≡ƒ¢æ Processing loop ended
+≡ƒº╣ Starting comprehensive resource cleanup...
+ΓÅ│ Stopping health_monitor_thread...
+ΓÜá∩╕Å health_monitor_thread did not stop gracefully
+ΓÅ│ Stopping maintenance_thread...
+ΓÜá∩╕Å maintenance_thread did not stop gracefully
+≡ƒ¢æ Frame capture stopped
+≡ƒö┤ Releasing StreamManager...
+≡ƒö┤ StreamManager released
+Γ£à Closed stream for 5
+≡ƒö┤ Releasing StreamManager...
+≡ƒö┤ StreamManager released
+Γ£à Cleaned up tracker for 5
+Γ£à Cleaned up logger for 5
+≡ƒºá Garbage collection: 1168 objects collected
+≡ƒôè Memory usage: 767.52 MB
+Γ£à Resource cleanup completed
+
+≡ƒôè Starting verification performance monitoring...
+≡ƒôè Started verification performance monitoring (interval: 60s)
+Γ£à Multi-source specific configuration applied
+≡ƒÄ¼ Starting stabilized multi-source processing with None sources
+ΓÜá∩╕Å Health monitor thread already running
+≡ƒ¢æ Processing loop ended
+≡ƒ¢æ Stopping all sources...
+
+≡ƒôè MULTI-SOURCE LOGGING SUMMARY:
+   TOTAL: 0 images, 0 server pushes
+
+Γ£à VIOLATION VERIFICATION SUMMARY:
+   Total Detected: 0
+   Total Verified: 0
+   Total Logged: 0
+   Verified Logged: 0
+   Unverified Logged: 0
+   False Positives Prevented: 42
+   False Positive Prevention Rate: 4200.0%
+Γ£à All sources stopped
