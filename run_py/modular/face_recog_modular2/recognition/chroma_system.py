@@ -35,28 +35,34 @@ class ChromaFaceRecognitionSystem(FaceRecognitionSystem):
             # Get ChromaDB configuration
             persist_directory = self.chroma_config.get(
                 'persist_directory', 
-                'C:/face_recognition/chroma_db'
+                r'C:\raihan\dokumen\project\global-env\faceRecog\run_py\modular\0_dataset\chroma_db'
             )
             
             # Create directory if it doesn't exist
-            Path(persist_directory).mkdir(parents=True, exist_ok=True)
+            persist_path = Path(persist_directory)
+            persist_path.mkdir(parents=True, exist_ok=True)
             
             # Initialize client (persistent or in-memory)
             if self.chroma_config.get('persistent', True):
                 self.chroma_client = chromadb.PersistentClient(
-                    path=persist_directory,
+                    path=str(persist_path),
                     settings=Settings(
                         anonymized_telemetry=False,
                         allow_reset=True
                     )
                 )
-                self.logger.info(f"ChromaDB persistent client initialized at: {persist_directory}")
+                self.logger.info(f"ChromaDB persistent client initialized at: {persist_path}")
             else:
                 self.chroma_client = chromadb.Client()
                 self.logger.info("ChromaDB in-memory client initialized")
             
             # Create or get collections
             self._setup_collections()
+            
+            # Log existing data
+            face_count = self.face_collection.count() if self.face_collection else 0
+            person_count = self.person_collection.count() if self.person_collection else 0
+            self.logger.info(f"ChromaDB initialized with {face_count} faces and {person_count} persons")
             
             # Migrate existing data if needed
             if self.chroma_config.get('migrate_existing', False):
@@ -68,7 +74,7 @@ class ChromaFaceRecognitionSystem(FaceRecognitionSystem):
             self.chroma_client = None
             self.face_collection = None
             self.person_collection = None
-    
+            
     def _setup_collections(self):
         """Setup ChromaDB collections for faces and persons"""
         try:
@@ -107,26 +113,44 @@ class ChromaFaceRecognitionSystem(FaceRecognitionSystem):
             migrated_count = 0
             for person_id, person_data in self.embeddings_db["persons"].items():
                 display_name = person_data["display_name"]
-                centroid = np.array(person_data["centroid_embedding"])
                 
-                # Add person profile
-                self.add_person_profile(
-                    display_name=display_name,
-                    centroid_embedding=centroid.tolist(),
-                    metadata=person_data.get("metadata", {}),
-                    source="migrated"
-                )
+                # Check if centroid exists and is valid
+                if "centroid_embedding" in person_data and person_data["centroid_embedding"]:
+                    centroid = np.array(person_data["centroid_embedding"])
+                    
+                    # Add person profile with centroid
+                    self.add_person_profile(
+                        display_name=display_name,
+                        centroid_embedding=centroid.tolist(),
+                        metadata={
+                            "original_person_id": person_id,
+                            "folder_name": person_data.get("folder_name", ""),
+                            "total_images": person_data.get("total_images", 0),
+                            "successful_embeddings": person_data.get("successful_embeddings", 0)
+                        },
+                        source="migrated"
+                    )
                 
                 # Add individual embeddings if available
-                if "embeddings" in person_data:
+                if "embeddings" in person_data and person_data["embeddings"]:
                     for i, embedding in enumerate(person_data["embeddings"]):
+                        # Ensure embedding is a numpy array
+                        if isinstance(embedding, list):
+                            embedding_array = np.array(embedding)
+                        elif isinstance(embedding, np.ndarray):
+                            embedding_array = embedding
+                        else:
+                            continue  # Skip invalid embeddings
+                        
+                        # Add individual face embedding
                         self.add_face_embedding(
-                            embedding=embedding,
+                            embedding=embedding_array,
                             person_name=display_name,
                             metadata={
                                 "migrated": True,
                                 "original_person_id": person_id,
-                                "embedding_index": i
+                                "embedding_index": i,
+                                "folder_name": person_data.get("folder_name", "")
                             }
                         )
                         migrated_count += 1
@@ -135,7 +159,7 @@ class ChromaFaceRecognitionSystem(FaceRecognitionSystem):
             
         except Exception as e:
             self.logger.error(f"Migration failed: {e}")
-    
+            
     def add_person_profile(self, display_name: str, centroid_embedding: List[float], 
                           metadata: Dict = None, source: str = "manual"):
         """Add or update a person's profile (centroid) in ChromaDB"""
@@ -171,20 +195,35 @@ class ChromaFaceRecognitionSystem(FaceRecognitionSystem):
         except Exception as e:
             self.logger.error(f"Failed to add person profile: {e}")
             return False
-    
-    def add_face_embedding(self, embedding: np.ndarray, person_name: str, 
-                          metadata: Dict = None) -> str:
+        
+    def add_face_embedding(self, embedding, person_name: str, 
+                        metadata: Dict = None) -> str:
         """Add a face embedding to ChromaDB with associated metadata"""
         try:
+            # Ensure embedding is a numpy array
+            if isinstance(embedding, list):
+                embedding_array = np.array(embedding)
+            elif isinstance(embedding, np.ndarray):
+                embedding_array = embedding
+            else:
+                raise ValueError(f"Embedding must be list or numpy array, got {type(embedding)}")
+            
+            # Validate embedding shape
+            if embedding_array.ndim != 1:
+                if embedding_array.ndim == 2 and embedding_array.shape[0] == 1:
+                    embedding_array = embedding_array.flatten()
+                else:
+                    raise ValueError(f"Invalid embedding shape: {embedding_array.shape}")
+            
             # Generate unique ID
             embedding_id = f"face_{uuid.uuid4().hex[:12]}"
             
-            # Prepare metadata - FIXED SYNTAX
+            # Prepare metadata
             face_metadata = {
                 "person_name": person_name,
                 "timestamp": datetime.now().isoformat(),
                 "added_via": "recognition_pipeline",
-                "embedding_dimension": len(embedding)
+                "embedding_dimension": len(embedding_array)
             }
             
             # Add additional metadata if provided
@@ -194,19 +233,19 @@ class ChromaFaceRecognitionSystem(FaceRecognitionSystem):
             # Add to face collection
             self.face_collection.add(
                 ids=[embedding_id],
-                embeddings=[embedding.tolist()],
+                embeddings=[embedding_array.tolist()],  # Now it's safe to call tolist()
                 metadatas=[face_metadata]
             )
             
             # Optionally update person centroid
-            self._update_person_centroid(person_name, embedding)
+            self._update_person_centroid(person_name, embedding_array)
             
             return embedding_id
             
         except Exception as e:
             self.logger.error(f"Failed to add face embedding: {e}")
             return None
-    
+            
     def _update_person_centroid(self, person_name: str, new_embedding: np.ndarray):
         """Update person's centroid embedding based on new face data"""
         try:

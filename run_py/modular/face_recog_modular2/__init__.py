@@ -28,9 +28,9 @@ def create_system(config: dict, system_type: str = "robust"):
     elif system_type == "voyager":
         return VoyagerFaceRecognitionSystem(system_config)
     elif system_type == "chroma":
-        return ChromaFaceRecognitionSystem
+        return ChromaFaceRecognitionSystem(system_config)
     else:
-        return VoyagerFaceRecognitionSystem(system_config)
+        return ChromaFaceRecognitionSystem(system_config)
 
 __all__ = [
     "ConfigManager", "ChromaFaceRecognitionSystem",
