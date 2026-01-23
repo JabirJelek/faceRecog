@@ -204,22 +204,34 @@ def get_default_config():
     """Return the complete default configuration"""
     return {
         # ========== MODEL PATHS ==========        
-        'detection_model_path': r'C:\raihan\dokumen\project\Computer-Vision-CV\3.1_FaceRecog\run_py\modular\0_0_model\yolov12m-face.pt',
-        'embeddings_db_path': r'C:\raihan\dokumen\project\Computer-Vision-CV\3.1_FaceRecog\run_py\modular\0_dataset\arcface_person_512.json',
-        'mask_model_path': r'C:\raihan\dokumen\project\Computer-Vision-CV\3.1_FaceRecog\run_py\modular\0_0_model\mask_detector_cus4.onnx',
+        'detection_model_path': r'C:\raihan\dokumen\project\global-env\faceRecog\run_py\modular\0_0_model\yolov12m-face.pt',
+        'embeddings_db_path': r'C:\raihan\dokumen\project\global-env\faceRecog\run_py\modular\0_dataset\person_512.json',
+        'mask_model_path': r'C:\raihan\dokumen\project\global-env\faceRecog\run_py\modular\0_0_model\mask_detector_cus4.onnx',
         
                                                 # PLEASE FIX THE STABILITY OF THE VERIFICATION 
                                                 # VALUE BEFORE TRYING TO CHANGE THE TYPE OF mask MODEL USED.        
         
         # ========== CORE DETECTION PARAMETERS ==========
-        'detection_confidence': 0.5,
+        'detection_confidence': 0.6,
         'recognition_threshold': 0.8,
         'mask_detection_threshold': 0.6,  # INCREASED from 0.5 - makes mask detection more conservative
         'detection_iou': 0.3,
         'min_face_size': 10, # Min face height in pixels
         'max_faces_per_frame': 15,
         'enable_person_detection': True,
-        'person_detection_confidence_threshold': 0.4,        
+        'person_detection_confidence_threshold': 0.5,    
+
+    # ========== CONFIGURATION OF CHROMADB ==========
+    'chromadb':{
+        'enabled': True,
+        'persistent': True,
+        'persist_directory': r'C:\raihan\dokumen\project\global-env\faceRecog\run_py\modular\0_dataset\chroma_db',
+        'migrate_existing': True, # Migrate old JSON embeddings
+        'store_all_faces':True, # Store every face detected
+        'store_unknown_faces':True, # Store unrecognized faces for review
+
+    
+    },       
         
     # ========== FRAME PROCESSING CONFIGURATION ==========
     'frame_processing': {
@@ -519,7 +531,7 @@ def get_default_config():
         
         # ========== ALERT CONFIGURATION ==========
         'enable_voice_alerts': True,
-        'alert_server_url': "https://vps.scasda.my.id/actions/a_notifikasi_suara_speaker.php",
+        'alert_server_url': "https://vps.casda.my.id/actions/a_notifikasi_suara_speaker.php",
         'alert_cooldown_seconds': 210,            # DECREASED from 20 - more responsive alerts
         'min_violation_frames': 1,              # DECREASED from 20 - more sensitive
         'min_violation_seconds': 1,              # DECREASED from 12 - faster alerts
@@ -932,7 +944,7 @@ def main():
     # Create robust face recognition system using factory
     print("\n🔄 Creating face recognition system...")
     try:
-        face_system = create_system(config, system_type="robust")
+        face_system = create_system(config, system_type="Chroma")
         
         # Verify GPU usage
         verify_gpu_usage(face_system)
