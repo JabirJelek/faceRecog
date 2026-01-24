@@ -1,0 +1,27 @@
+==================================================
+RUN STARTED: 2026-01-24 09:33:51
+Run Folder: C:\raihan\dokumen\project\global-env\faceRecog\process-run\Run_Process_TowerCPU_2026-01-24_09-33-51
+PowerShell Script: script-organized-TowerCPU-0.ps1
+Virtual Environment: C:\raihan\dokumen\project\global-env\faceRecog\.venv
+Python Script: C:\raihan\dokumen\project\global-env\faceRecog\run_py\modular\entry_multi-USED-TowerCPU.py
+Arguments: --multi-source
+Number of arguments: 1
+==================================================
+
+Execution started at: 2026-01-24 09:33:51
+"C:\raihan\dokumen\project\global-env\faceRecog\.venv\Scripts\python.exe" "C:\raihan\dokumen\project\global-env\faceRecog\run_py\modular\entry_multi-USED-TowerCPU.py" --multi-source
+
+
+==================================================
+EXECUTION SUMMARY
+==================================================
+PowerShell Script: script-organized-TowerCPU-0.ps1
+Exit code: 0
+Start time: 2026-01-24 09:33:51
+End time: 2026-01-24 09:35:02
+Duration: 00:01:11
+Arguments passed to Python script:
+  [0]: -
+Python script created folders:
+  - C:\raihan\dokumen\project\global-env\faceRecog\process-run\Run_Process_TowerCPU_2026-01-24_09-33-51\script_output\multi_source_20260124_093428_Camera-101_images
+  - C:\raihan\dokumen\project\global-env\faceRecog\process-run\Run_Process_TowerCPU_2026-01-24_09-33-51\script_output\multi_source_20260124_093428_Camera-601_images

@@ -1,0 +1,13 @@
+{
+  "arguments": "--multi-source",
+  "powershell_script": "script-organized-TowerCPU-0.ps1",
+  "run_id": "2026-01-24_09-33-51",
+  "arguments_count": 1,
+  "run_folder": "C:\\raihan\\dokumen\\project\\global-env\\faceRecog\\process-run\\Run_Process_TowerCPU_2026-01-24_09-33-51",
+  "virtual_env": "C:\\raihan\\dokumen\\project\\global-env\\faceRecog\\.venv",
+  "start_time": "2026-01-24 09:33:51",
+  "python_script": "C:\\raihan\\dokumen\\project\\global-env\\faceRecog\\run_py\\modular\\entry_multi-USED-TowerCPU.py",
+  "end_time": "2026-01-24 09:35:02",
+  "duration": "00:01:11",
+  "exit_code": 0
+}
