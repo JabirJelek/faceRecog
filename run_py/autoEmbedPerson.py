@@ -6,7 +6,7 @@ from typing import Dict, List
 import time
 
 class SimpleFaceDatasetCreator:
-    def __init__(self, dataset_root: str, output_json: str = "person_folder1.json"):
+    def __init__(self, dataset_root: str, output_json: str = "person_folder_0.json"):
         self.dataset_root = dataset_root
         self.output_json = output_json
         self.dataset = {"persons": {}, "metadata": {}}
@@ -44,7 +44,7 @@ class SimpleFaceDatasetCreator:
                 # Generate embedding
                 embedding_obj = DeepFace.represent(
                     img_path=image_path,
-                    model_name='ArcFace',
+                    model_name='Facenet512',
                     enforce_detection=False
                 )
                 

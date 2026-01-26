@@ -1,0 +1,13 @@
+==================================================
+RUN STARTED: 2026-01-26 09:19:05
+Run Folder: C:\raihan\dokumen\project\global-env\faceRecog\process-run\Run_Process_TowerCPU_Embedding_2026-01-26_09-19-05
+PowerShell Script: process-run-0.ps1
+Virtual Environment: C:\raihan\dokumen\project\global-env\faceRecog\.venv
+Python Script: C:\raihan\dokumen\project\global-env\faceRecog\run_py\autoEmbedPerson.py
+Arguments: --multi-source
+Number of arguments: 1
+==================================================
+
+Execution started at: 2026-01-26 09:19:05
+"C:\raihan\dokumen\project\global-env\faceRecog\.venv\Scripts\python.exe" "C:\raihan\dokumen\project\global-env\faceRecog\run_py\autoEmbedPerson.py" --multi-source
+

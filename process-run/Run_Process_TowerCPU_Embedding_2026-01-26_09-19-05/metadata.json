@@ -1,0 +1,10 @@
+{
+  "start_time": "2026-01-26 09:19:05",
+  "powershell_script": "process-run-0.ps1",
+  "run_folder": "C:\\raihan\\dokumen\\project\\global-env\\faceRecog\\process-run\\Run_Process_TowerCPU_Embedding_2026-01-26_09-19-05",
+  "arguments_count": 1,
+  "arguments": "--multi-source",
+  "virtual_env": "C:\\raihan\\dokumen\\project\\global-env\\faceRecog\\.venv",
+  "run_id": "2026-01-26_09-19-05",
+  "python_script": "C:\\raihan\\dokumen\\project\\global-env\\faceRecog\\run_py\\autoEmbedPerson.py"
+}
