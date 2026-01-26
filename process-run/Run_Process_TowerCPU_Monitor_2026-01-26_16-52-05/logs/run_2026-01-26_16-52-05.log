@@ -1,0 +1,10 @@
+==================================================
+PROCESS EXECUTION WITH INDEPENDENT MONITOR
+==================================================
+Start Time: 2026-01-26 16:52:05
+Run ID: 2026-01-26_16-52-05
+Run Folder: C:\raihan\dokumen\project\global-env\faceRecog\process-run\Run_Process_TowerCPU_Monitor_2026-01-26_16-52-05
+Script: USED-test-1.ps1
+Python Script: C:\raihan\dokumen\project\global-env\faceRecog\run_py\modular\entry_multi-USED-TowerCPU.py
+Independent Monitor: ENABLED
+==================================================

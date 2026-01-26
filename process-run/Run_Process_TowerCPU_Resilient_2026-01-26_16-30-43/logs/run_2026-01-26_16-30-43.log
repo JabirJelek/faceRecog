@@ -1,0 +1,25 @@
+==================================================
+RESILIENT PROCESS EXECUTION STARTED
+==================================================
+Start Time: 2026-01-26 16:30:43
+Run ID: 2026-01-26_16-30-43
+Run Folder: C:\raihan\dokumen\project\global-env\faceRecog\process-run\Run_Process_TowerCPU_Resilient_2026-01-26_16-30-43
+Script: USED-testing-2.ps1
+Python Script: C:\raihan\dokumen\project\global-env\faceRecog\run_py\modular\entry_multi-USED-TowerCPU.py
+==================================================
+2026-01-26 16:30:43.558 [INFO] Starting Python process execution...
+2026-01-26 16:30:43.563 [INFO] Arguments: --multi-source
+2026-01-26 16:30:43.616 [SUCCESS] Python process started with PID: 5324
+2026-01-26 16:30:44.189 [INFO] Starting process watch with sleep intervals...
+2026-01-26 16:31:11.371 [INFO] Process still running. Elapsed: 27s
+2026-01-26 16:31:41.519 [INFO] Process still running. Elapsed: 57s
+2026-01-26 16:32:11.725 [INFO] Process still running. Elapsed: 1m 27s
+2026-01-26 16:32:41.895 [INFO] Process still running. Elapsed: 1m 57s
+2026-01-26 16:33:12.181 [INFO] Process still running. Elapsed: 2m 27s
+2026-01-26 16:33:42.420 [INFO] Process still running. Elapsed: 2m 58s
+2026-01-26 16:34:12.708 [INFO] Process still running. Elapsed: 3m 28s
+2026-01-26 16:34:42.895 [INFO] Process still running. Elapsed: 3m 58s
+2026-01-26 16:35:13.574 [INFO] Process still running. Elapsed: 4m 29s
+2026-01-26 16:36:15.264 [INFO] Process still running. Elapsed: 5m 31s
+2026-01-26 16:36:45.641 [INFO] Process still running. Elapsed: 6m 1s
+2026-01-26 16:37:16.297 [INFO] Process still running. Elapsed: 6m 32s

@@ -1,0 +1,9 @@
+Monitor started at: 01/26/2026 16:28:02
+Monitoring run folder: C:\raihan\dokumen\project\global-env\faceRecog\process-run\Run_Process_TowerCPU_Resilient_2026-01-26_16-28-01
+Check interval: 30 seconds
+Max monitor time: 120 minutes
+Max checks: 240
+Check #1 at 01/26/2026 16:28:02 - Elapsed: 00:00:00
+Check #2 at 01/26/2026 16:28:32 - Elapsed: 00:00:30
+Check #3 at 01/26/2026 16:29:02 - Elapsed: 00:01:00
+Check #4 at 01/26/2026 16:29:32 - Elapsed: 00:01:30
