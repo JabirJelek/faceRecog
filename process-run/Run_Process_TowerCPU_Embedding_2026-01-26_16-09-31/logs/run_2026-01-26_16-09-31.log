@@ -1,0 +1,29 @@
+==================================================
+RUN STARTED: 2026-01-26 16:09:31
+System Local Time: 01/26/2026 16:09:29
+System UTC Time: 01/26/2026 09:09:29
+Time Zone: (UTC+07:00) Bangkok, Hanoi, Jakarta
+==================================================
+Run Folder: C:\raihan\dokumen\project\global-env\faceRecog\process-run\Run_Process_TowerCPU_Embedding_2026-01-26_16-09-31
+PowerShell Script: testing-2.ps1
+Virtual Environment: C:\raihan\dokumen\project\global-env\faceRecog\.venv
+Python Script: C:\raihan\dokumen\project\global-env\faceRecog\run_py\modular\entry_multi-USED-TowerCPU.py
+Arguments: --multi-source
+==================================================
+
+==================================================
+PYTHON PROCESS STARTED: 2026-01-26 16:09:31
+==================================================
+"C:\raihan\dokumen\project\global-env\faceRecog\.venv\Scripts\python.exe" "C:\raihan\dokumen\project\global-env\faceRecog\run_py\modular\entry_multi-USED-TowerCPU.py" --multi-source
+
+==================================================
+EXECUTION SUMMARY
+==================================================
+Python Process Start: 2026-01-26 16:09:31
+Python Process End: 2026-01-26 16:10:56
+Python Process Duration: 1m 24s
+
+PowerShell Script: testing-2.ps1
+Exit code: 0
+
+Completion File: Not found

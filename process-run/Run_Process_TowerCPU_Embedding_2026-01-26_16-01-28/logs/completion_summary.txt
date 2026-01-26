@@ -1,0 +1,26 @@
+==================================================
+RUN COMPLETION SUMMARY
+==================================================
+Completion Time: 2026-01-26 16:05:23
+Run ID: 2026-01-26_16-01-28
+PowerShell Script: testing-2.ps1
+Status: SUCCESS
+Exit Code: 0
+
+TIMING INFORMATION
+==================================================
+Python Process Duration: 1m 24s
+
+FOLDER STRUCTURE
+==================================================
+Run Folder: C:\raihan\dokumen\project\global-env\faceRecog\process-run\Run_Process_TowerCPU_Embedding_2026-01-26_16-01-28
+├── logs\
+│   ├── run_2026-01-26_16-01-28.log
+│   ├── python_output.txt
+│   └── completion_summary.txt
+├── script_output\
+└── metadata.json
+
+COMPLETION FILE STATUS
+==================================================
+✗ Completion file not found after waiting

@@ -1,2 +1,12 @@
 # Ignoring the images file, but still storing the log file for debug.
 process-run/Run_*/script_output/multi_*/violations
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv

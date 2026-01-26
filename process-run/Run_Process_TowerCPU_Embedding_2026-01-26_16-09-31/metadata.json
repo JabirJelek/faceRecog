@@ -1,0 +1,26 @@
+{
+  "python_script": "C:\\raihan\\dokumen\\project\\global-env\\faceRecog\\run_py\\modular\\entry_multi-USED-TowerCPU.py",
+  "arguments": "--multi-source",
+  "start_time": "2026-01-26 16:09:31",
+  "system_info": {
+    "local_time": "2026-01-26T16:09:29.0305808+07:00",
+    "utc_time": "2026-01-26T09:09:29.0307653Z",
+    "timezone": "(UTC+07:00) Bangkok, Hanoi, Jakarta"
+  },
+  "virtual_env": "C:\\raihan\\dokumen\\project\\global-env\\faceRecog\\.venv",
+  "run_folder": "C:\\raihan\\dokumen\\project\\global-env\\faceRecog\\process-run\\Run_Process_TowerCPU_Embedding_2026-01-26_16-09-31",
+  "powershell_script": "testing-2.ps1",
+  "run_id": "2026-01-26_16-09-31",
+  "end_time": "2026-01-26 16:13:26",
+  "process_timing": {
+    "python_end": "2026-01-26T16:10:56.096448+07:00",
+    "python_duration_seconds": 84.6304807,
+    "python_start": "2026-01-26T16:09:31.4659673+07:00"
+  },
+  "exit_code": 0,
+  "completion_file": null,
+  "email_notification": {
+    "sent_time": null,
+    "sent": false
+  }
+}

@@ -1,6 +1,6 @@
-# script-organized-TowerCPU-0-complete.ps1
+# script-organized-TowerCPU-0-complete-fixed.ps1
 # ==============================================
-# Complete version with all functions defined
+# Complete version with all functions defined and fixed colon error
 # ==============================================
 
 # ========== CONFIGURATION ==========
@@ -18,13 +18,13 @@ $RUNS_BASE_PATH = "C:\raihan\dokumen\project\global-env\faceRecog\process-run"
 
 # Email Configuration - SECURE VERSION
 $EMAIL_CONFIG = @{
-    Enabled = $true  # Set to $true after configuring
-    #SmtpServer = "smtp.gmail.com"
-    #SmtpPort = 587
+    Enabled = $false  # Set to $true after configuring
+    SmtpServer = "smtp.gmail.com"
+    SmtpPort = 587
     UseSsl = $true
-    SenderEmail = "ikeepmypromiz@gmail.com"
+    SenderEmail = "tester@gmail.com"
     RecipientEmail = "faridraihan17@gmail.com"
-    SubjectPrefix = "[FaceRecog Process]"
+    SubjectPrefix = "[FaceRecog Status]"
     CredentialMethod = "CredentialFile"
     PasswordEnvironmentVariable = "FACE_RECOG_EMAIL_PASSWORD"
     CredentialFilePath = "$env:USERPROFILE\.face-recog\email-credential.xml"
@@ -218,9 +218,9 @@ function Test-VenvConfiguration {
         $results += $pythonCheck
         
         # Check pip
-        $pipExe = "$VenvPath\Scripts\pip.exe"
-        $pipCheck = Test-PathWithDetail -Path $pipExe -PathType "File" -Description "Pip Executable"
-        $results += $pipCheck
+        # $pipExe = "$VenvPath\Scripts\pip.exe"
+        # $pipCheck = Test-PathWithDetail -Path $pipExe -PathType "File" -Description "Pip Executable"
+        # $results += $pipCheck
     }
     
     return $results
@@ -292,9 +292,11 @@ function Display-CheckResults {
             Write-Host "    Error: $($result.Error)" -ForegroundColor Yellow
         }
         if ($result.Details.Count -gt 0 -and $result.Valid) {
-            foreach ($detail in $result.Details.Keys) {
-                if ($detail -ne "Exception") {
-                    Write-Host "    $detail: $($result.Details[$detail])" -ForegroundColor Gray
+            foreach ($detailKey in $result.Details.Keys) {
+                if ($detailKey -ne "Exception") {
+                    # FIXED: Using string formatting to avoid colon issue
+                    $detailValue = $result.Details[$detailKey]
+                    Write-Host ("    {0}: {1}" -f $detailKey, $detailValue) -ForegroundColor Gray
                 }
             }
         }
