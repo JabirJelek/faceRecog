@@ -4,9 +4,12 @@
 # ==============================================
 
 # ========== CONFIGURATION ==========
-$VENV_ROOT = "C:\raihan\dokumen\project\global-env\faceRecog\.venv"
-$PYTHON_SCRIPT = "C:\raihan\dokumen\project\global-env\faceRecog\run_py\modular\entry_multi-USED-TowerCPU.py"
+$VENV_ROOT = "D:\RaihanFarid\Dokumen\global-env\.venv"
+$PYTHON_SCRIPT = "D:\RaihanFarid\Dokumen\faceRecog\run_py\modular\entry_multi-USED-Magick.py"
 $POWERSHELL_SCRIPT_NAME = Split-Path -Leaf $MyInvocation.MyCommand.Path  # Added: Get current script name
+
+# Base path for all runs (outside virtual environment)
+$RUNS_BASE_PATH = "D:\RaihanFarid\Dokumen\faceRecog\process-run"
 
 # ENHANCED: Use an array for multiple arguments
 # Each argument should be a separate element in the array
@@ -31,8 +34,6 @@ $PYTHON_PARAMS = @{
 
 }
 
-# Base path for all runs (outside virtual environment)
-$RUNS_BASE_PATH = "C:\raihan\dokumen\project\global-env\faceRecog\process-run"
 # ===================================
 
 # Helper function to convert hashtable to argument array
@@ -60,7 +61,7 @@ if (-not (Test-Path $RUNS_BASE_PATH)) {
 
 # Generate run folder with timestamp
 $timestamp = Get-Date -Format "yyyy-MM-dd_HH-mm-ss"
-$RUN_FOLDER_NAME = "Run_Process_TowerCPU_$timestamp"
+$RUN_FOLDER_NAME = "Magick_Process_MaskDetect_$timestamp"
 $RUN_FOLDER_PATH = Join-Path $RUNS_BASE_PATH $RUN_FOLDER_NAME
 
 # Create run folder structure

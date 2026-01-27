@@ -4,8 +4,8 @@
 # ==============================================
 
 # ========== CONFIGURATION ==========
-$VENV_ROOT = "C:\raihan\dokumen\project\global-env\faceRecog\.venv"
-$PYTHON_SCRIPT = "C:\raihan\dokumen\project\global-env\faceRecog\run_py\modular\entry_multi-USED-TowerCPU.py"
+$VENV_ROOT = "D:\RaihanFarid\Dokumen\faceRecog\.venv"
+$PYTHON_SCRIPT = "D:\RaihanFarid\Dokumen\faceRecog\run_py\modular\entry_multi-USED-TowerCPU.py"
 $POWERSHELL_SCRIPT_NAME = Split-Path -Leaf $MyInvocation.MyCommand.Path
 
 # Python parameters
@@ -14,7 +14,7 @@ $PYTHON_PARAMS = @{
 }
 
 # Base path for all runs
-$RUNS_BASE_PATH = "C:\raihan\dokumen\project\global-env\faceRecog\process-run"
+$RUNS_BASE_PATH = "D:\RaihanFarid\Dokumen\faceRecog\process-run"
 
 # Email Configuration - SECURE VERSION
 $EMAIL_CONFIG = @{

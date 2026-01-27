@@ -205,7 +205,7 @@ def get_default_config():
     return {
         # ========== MODEL PATHS ==========        
         'detection_model_path': r'D:\RaihanFarid\Dokumen\Object Detection\3.1_FaceRecog\run_py\modular\0_0_model\yolov12m-face.pt',
-        'embeddings_db_path': r'D:\RaihanFarid\Dokumen\Object Detection\3.1_FaceRecog\run_py\modular\0_dataset\person_512.json',
+        'embeddings_db_path': r'D:\RaihanFarid\Dokumen\faceRecog\run_py\modular\0_dataset\new_face_dataset.json',
         'mask_model_path': r'D:\RaihanFarid\Dokumen\Object Detection\3.1_FaceRecog\run_py\modular\0_0_model\mask_detector_cus4.onnx',
         
                                                 # PLEASE FIX THE STABILITY OF THE VERIFICATION 
@@ -949,7 +949,7 @@ def main():
     # Create robust face recognition system using factory
     print("\n🔄 Creating face recognition system...")
     try:
-        face_system = create_system(config, system_type="robust")
+        face_system = create_system(config, system_type="voyager")
         
         # Verify GPU usage
         verify_gpu_usage(face_system)
@@ -958,7 +958,7 @@ def main():
         print(f"❌ Failed to create face recognition system: {e}")
         print("🔄 Falling back to CPU mode...")
         config['use_gpu'] = False
-        face_system = create_system(config, system_type="robust")
+        face_system = create_system(config, system_type="voyager")
     
     # Apply multi-source specific configurations
     multi_source_config = {
