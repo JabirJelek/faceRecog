@@ -1,4 +1,4 @@
-# script-organized-TowerCPU-0.ps1
+# secondScipt.ps1
 # ==============================================
 # Organized version with unified folder structure
 # ==============================================
