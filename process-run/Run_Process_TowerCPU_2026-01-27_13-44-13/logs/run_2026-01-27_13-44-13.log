@@ -1,0 +1,26 @@
+==================================================
+RUN STARTED: 2026-01-27 13:44:13
+Run Folder: D:\RaihanFarid\Dokumen\faceRecog\process-run\Run_Process_TowerCPU_2026-01-27_13-44-13
+PowerShell Script: process-run-0.ps1
+Virtual Environment: D:\RaihanFarid\Dokumen\global-env\.venv
+Python Script: D:\RaihanFarid\Dokumen\faceRecog\run_py\modular\entry_multi-USED-Magick.py
+Arguments: --multi-source
+Number of arguments: 1
+==================================================
+
+Execution started at: 2026-01-27 13:44:13
+"D:\RaihanFarid\Dokumen\global-env\.venv\Scripts\python.exe" "D:\RaihanFarid\Dokumen\faceRecog\run_py\modular\entry_multi-USED-Magick.py" --multi-source
+
+
+==================================================
+EXECUTION SUMMARY
+==================================================
+PowerShell Script: process-run-0.ps1
+Exit code: 0
+Start time: 2026-01-27 13:44:13
+End time: 2026-01-27 13:46:47
+Duration: 00:02:33
+Arguments passed to Python script:
+  [0]: -
+Python script created folders:
+  - D:\RaihanFarid\Dokumen\faceRecog\process-run\Run_Process_TowerCPU_2026-01-27_13-44-13\script_output\multi_source_20260127_134449_Local-Camera-0_images
