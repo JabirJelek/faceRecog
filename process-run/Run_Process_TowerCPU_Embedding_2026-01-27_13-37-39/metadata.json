@@ -1,0 +1,13 @@
+{
+  "python_script": "D:\\RaihanFarid\\Dokumen\\faceRecog\\run_py\\modular\\entry_multi-USED-TowerCPU.py",
+  "start_time": "2026-01-27 13:37:39",
+  "arguments_count": 1,
+  "virtual_env": "D:\\RaihanFarid\\Dokumen\\faceRecog\\.venv",
+  "run_folder": "D:\\RaihanFarid\\Dokumen\\faceRecog\\process-run\\Run_Process_TowerCPU_Embedding_2026-01-27_13-37-39",
+  "arguments": "--multi-source",
+  "powershell_script": "process-run-0.ps1",
+  "run_id": "2026-01-27_13-37-39",
+  "end_time": "2026-01-27 13:37:49",
+  "duration": "00:00:09",
+  "exit_code": 1
+}

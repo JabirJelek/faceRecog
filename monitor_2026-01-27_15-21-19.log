@@ -1,0 +1,169 @@
+[2026-01-27 15:21:19] [INFO] === Face Recognition Monitor Started ===
+[2026-01-27 15:21:19] [INFO] Start Time: 15:22
+[2026-01-27 15:21:19] [INFO] End Time: 15:25
+[2026-01-27 15:21:19] [INFO] Worker Script: D:\RaihanFarid\Dokumen\exp-magick\maskDetect.ps1
+[2026-01-27 15:21:19] [INFO] Runs Base Path: D:\RaihanFarid\Dokumen\faceRecog\process-run
+[2026-01-27 15:21:19] [INFO] Worker Start Delay: 10 seconds
+[2026-01-27 15:21:19] [INFO] Worker status changed: Stopped
+[2026-01-27 15:21:19] [DEBUG] Check: 15:21 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:21:50] [DEBUG] Check: 15:21 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:22:20] [DEBUG] Check: 15:22 | Worker: Stopped | Window: Active
+[2026-01-27 15:22:20] [INFO] Time window active - starting face recognition worker...
+[2026-01-27 15:22:20] [INFO] Starting face recognition worker process...
+[2026-01-27 15:22:20] [SUCCESS] Worker process started successfully (PID: 37296)
+[2026-01-27 15:22:20] [DEBUG] Waiting 10 seconds for worker to initialize...
+[2026-01-27 15:22:30] [SUCCESS] Worker process confirmed running
+[2026-01-27 15:22:30] [SUCCESS] Worker started successfully. Monitoring progress...
+[2026-01-27 15:23:00] [DEBUG] Check: 15:23 | Worker: Stopped | Window: Active
+[2026-01-27 15:23:00] [INFO] Time window active - starting face recognition worker...
+[2026-01-27 15:23:00] [INFO] Starting face recognition worker process...
+[2026-01-27 15:23:00] [SUCCESS] Worker process started successfully (PID: 976)
+[2026-01-27 15:23:00] [DEBUG] Waiting 10 seconds for worker to initialize...
+[2026-01-27 15:23:10] [SUCCESS] Worker process confirmed running
+[2026-01-27 15:23:10] [SUCCESS] Worker started successfully. Monitoring progress...
+[2026-01-27 15:23:40] [DEBUG] Check: 15:23 | Worker: Stopped | Window: Active
+[2026-01-27 15:23:40] [INFO] Time window active - starting face recognition worker...
+[2026-01-27 15:23:40] [INFO] Starting face recognition worker process...
+[2026-01-27 15:23:40] [SUCCESS] Worker process started successfully (PID: 5136)
+[2026-01-27 15:23:40] [DEBUG] Waiting 10 seconds for worker to initialize...
+[2026-01-27 15:23:50] [SUCCESS] Worker process confirmed running
+[2026-01-27 15:23:50] [SUCCESS] Worker started successfully. Monitoring progress...
+[2026-01-27 15:24:20] [DEBUG] Check: 15:24 | Worker: Stopped | Window: Active
+[2026-01-27 15:24:20] [INFO] Time window active - starting face recognition worker...
+[2026-01-27 15:24:20] [INFO] Starting face recognition worker process...
+[2026-01-27 15:24:20] [SUCCESS] Worker process started successfully (PID: 27220)
+[2026-01-27 15:24:20] [DEBUG] Waiting 10 seconds for worker to initialize...
+[2026-01-27 15:24:30] [SUCCESS] Worker process confirmed running
+[2026-01-27 15:24:30] [SUCCESS] Worker started successfully. Monitoring progress...
+[2026-01-27 15:25:01] [DEBUG] Check: 15:25 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:25:31] [DEBUG] Check: 15:25 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:26:01] [DEBUG] Check: 15:26 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:26:31] [DEBUG] Check: 15:26 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:27:01] [DEBUG] Check: 15:27 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:27:31] [DEBUG] Check: 15:27 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:28:01] [DEBUG] Check: 15:28 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:28:31] [DEBUG] Check: 15:28 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:29:01] [DEBUG] Check: 15:29 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:29:31] [DEBUG] Check: 15:29 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:30:01] [DEBUG] Check: 15:30 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:30:31] [DEBUG] Check: 15:30 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:31:01] [DEBUG] Check: 15:31 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:31:31] [DEBUG] Check: 15:31 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:32:01] [DEBUG] Check: 15:32 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:32:31] [DEBUG] Check: 15:32 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:33:01] [DEBUG] Check: 15:33 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:33:31] [DEBUG] Check: 15:33 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:34:01] [DEBUG] Check: 15:34 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:34:31] [DEBUG] Check: 15:34 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:35:01] [DEBUG] Check: 15:35 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:35:31] [DEBUG] Check: 15:35 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:36:01] [DEBUG] Check: 15:36 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:36:31] [DEBUG] Check: 15:36 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:37:01] [DEBUG] Check: 15:37 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:37:31] [DEBUG] Check: 15:37 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:38:01] [DEBUG] Check: 15:38 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:38:31] [DEBUG] Check: 15:38 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:39:01] [DEBUG] Check: 15:39 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:39:31] [DEBUG] Check: 15:39 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:40:01] [DEBUG] Check: 15:40 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:40:31] [DEBUG] Check: 15:40 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:41:01] [DEBUG] Check: 15:41 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:41:31] [DEBUG] Check: 15:41 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:42:01] [DEBUG] Check: 15:42 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:42:31] [DEBUG] Check: 15:42 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:43:01] [DEBUG] Check: 15:43 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:43:31] [DEBUG] Check: 15:43 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:44:01] [DEBUG] Check: 15:44 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:44:31] [DEBUG] Check: 15:44 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:45:01] [DEBUG] Check: 15:45 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:45:31] [DEBUG] Check: 15:45 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:46:01] [DEBUG] Check: 15:46 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:46:31] [DEBUG] Check: 15:46 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:47:01] [DEBUG] Check: 15:47 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:47:31] [DEBUG] Check: 15:47 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:48:01] [DEBUG] Check: 15:48 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:48:31] [DEBUG] Check: 15:48 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:49:01] [DEBUG] Check: 15:49 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:49:31] [DEBUG] Check: 15:49 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:50:01] [DEBUG] Check: 15:50 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:50:31] [DEBUG] Check: 15:50 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:51:01] [DEBUG] Check: 15:51 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:51:31] [DEBUG] Check: 15:51 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:52:01] [DEBUG] Check: 15:52 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:52:31] [DEBUG] Check: 15:52 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:53:01] [DEBUG] Check: 15:53 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:53:31] [DEBUG] Check: 15:53 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:54:01] [DEBUG] Check: 15:54 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:54:32] [DEBUG] Check: 15:54 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:55:02] [DEBUG] Check: 15:55 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:55:32] [DEBUG] Check: 15:55 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:56:02] [DEBUG] Check: 15:56 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:56:32] [DEBUG] Check: 15:56 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:57:02] [DEBUG] Check: 15:57 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:57:32] [DEBUG] Check: 15:57 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:58:02] [DEBUG] Check: 15:58 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:58:32] [DEBUG] Check: 15:58 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:59:02] [DEBUG] Check: 15:59 | Worker: Stopped | Window: Inactive
+[2026-01-27 15:59:32] [DEBUG] Check: 15:59 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:00:02] [DEBUG] Check: 16:00 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:00:32] [DEBUG] Check: 16:00 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:01:02] [DEBUG] Check: 16:01 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:01:32] [DEBUG] Check: 16:01 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:02:02] [DEBUG] Check: 16:02 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:02:32] [DEBUG] Check: 16:02 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:03:02] [DEBUG] Check: 16:03 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:03:32] [DEBUG] Check: 16:03 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:04:02] [DEBUG] Check: 16:04 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:04:32] [DEBUG] Check: 16:04 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:05:02] [DEBUG] Check: 16:05 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:05:32] [DEBUG] Check: 16:05 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:06:02] [DEBUG] Check: 16:06 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:06:32] [DEBUG] Check: 16:06 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:07:02] [DEBUG] Check: 16:07 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:07:32] [DEBUG] Check: 16:07 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:08:02] [DEBUG] Check: 16:08 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:08:32] [DEBUG] Check: 16:08 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:09:02] [DEBUG] Check: 16:09 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:09:32] [DEBUG] Check: 16:09 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:10:02] [DEBUG] Check: 16:10 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:10:32] [DEBUG] Check: 16:10 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:11:02] [DEBUG] Check: 16:11 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:11:32] [DEBUG] Check: 16:11 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:12:02] [DEBUG] Check: 16:12 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:12:32] [DEBUG] Check: 16:12 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:13:02] [DEBUG] Check: 16:13 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:13:32] [DEBUG] Check: 16:13 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:14:02] [DEBUG] Check: 16:14 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:14:32] [DEBUG] Check: 16:14 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:15:02] [DEBUG] Check: 16:15 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:15:32] [DEBUG] Check: 16:15 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:16:02] [DEBUG] Check: 16:16 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:16:32] [DEBUG] Check: 16:16 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:17:02] [DEBUG] Check: 16:17 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:17:32] [DEBUG] Check: 16:17 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:18:02] [DEBUG] Check: 16:18 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:18:32] [DEBUG] Check: 16:18 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:19:02] [DEBUG] Check: 16:19 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:19:32] [DEBUG] Check: 16:19 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:20:02] [DEBUG] Check: 16:20 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:20:32] [DEBUG] Check: 16:20 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:21:02] [DEBUG] Check: 16:21 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:21:32] [DEBUG] Check: 16:21 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:22:02] [DEBUG] Check: 16:22 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:22:32] [DEBUG] Check: 16:22 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:23:02] [DEBUG] Check: 16:23 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:23:32] [DEBUG] Check: 16:23 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:24:02] [DEBUG] Check: 16:24 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:24:32] [DEBUG] Check: 16:24 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:25:02] [DEBUG] Check: 16:25 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:25:32] [DEBUG] Check: 16:25 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:26:02] [DEBUG] Check: 16:26 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:26:32] [DEBUG] Check: 16:26 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:27:02] [DEBUG] Check: 16:27 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:27:32] [DEBUG] Check: 16:27 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:28:02] [DEBUG] Check: 16:28 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:28:32] [DEBUG] Check: 16:28 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:29:03] [DEBUG] Check: 16:29 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:29:33] [DEBUG] Check: 16:29 | Worker: Stopped | Window: Inactive
+[2026-01-27 16:29:43] [INFO] Cleaning up...
+[2026-01-27 16:29:43] [INFO] === Face Recognition Monitor Stopped ===

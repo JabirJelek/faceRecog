@@ -1,0 +1,33 @@
+[2026-01-27 14:57:32] [INFO] === Face Recognition Monitor Started ===
+[2026-01-27 14:57:32] [INFO] Start Time: 15:58
+[2026-01-27 14:57:32] [INFO] End Time: 17:00
+[2026-01-27 14:57:32] [INFO] Worker Script: D:\RaihanFarid\Dokumen\exp-magick\USED-test-1.ps1
+[2026-01-27 14:57:32] [INFO] Runs Base Path: D:\RaihanFarid\Dokumen\faceRecog\process-run
+[2026-01-27 14:57:32] [DEBUG] Check: 14:57 | Worker: Stopped | Window: Inactive
+[2026-01-27 14:58:02] [DEBUG] Check: 14:58 | Worker: Stopped | Window: Inactive
+[2026-01-27 14:58:10] [INFO] Cleaning up...
+[2026-01-27 14:58:10] [WARN] No worker PID recorded
+[2026-01-27 14:58:10] [INFO] === Face Recognition Monitor Stopped ===
+[2026-01-27 14:58:19] [INFO] === Face Recognition Monitor Started ===
+[2026-01-27 14:58:19] [INFO] Start Time: 14:58
+[2026-01-27 14:58:19] [INFO] End Time: 17:00
+[2026-01-27 14:58:19] [INFO] Worker Script: D:\RaihanFarid\Dokumen\exp-magick\USED-test-1.ps1
+[2026-01-27 14:58:19] [INFO] Runs Base Path: D:\RaihanFarid\Dokumen\faceRecog\process-run
+[2026-01-27 14:58:19] [DEBUG] Check: 14:58 | Worker: Stopped | Window: Active
+[2026-01-27 14:58:19] [INFO] Time window active - starting face recognition worker...
+[2026-01-27 14:58:19] [INFO] Starting face recognition worker process...
+[2026-01-27 14:58:19] [SUCCESS] Worker process started successfully (PID: 30672)
+[2026-01-27 14:58:21] [ERROR] Worker process exited immediately - check script for errors
+[2026-01-27 14:58:51] [DEBUG] Check: 14:58 | Worker: Stopped | Window: Active
+[2026-01-27 14:58:51] [INFO] Time window active - starting face recognition worker...
+[2026-01-27 14:58:51] [INFO] Starting face recognition worker process...
+[2026-01-27 14:58:51] [SUCCESS] Worker process started successfully (PID: 29356)
+[2026-01-27 14:58:53] [ERROR] Worker process exited immediately - check script for errors
+[2026-01-27 14:59:23] [DEBUG] Check: 14:59 | Worker: Stopped | Window: Active
+[2026-01-27 14:59:23] [INFO] Time window active - starting face recognition worker...
+[2026-01-27 14:59:23] [INFO] Starting face recognition worker process...
+[2026-01-27 14:59:24] [SUCCESS] Worker process started successfully (PID: 39492)
+[2026-01-27 14:59:26] [ERROR] Worker process exited immediately - check script for errors
+[2026-01-27 14:59:51] [INFO] Cleaning up...
+[2026-01-27 14:59:51] [WARN] No worker PID recorded
+[2026-01-27 14:59:51] [INFO] === Face Recognition Monitor Stopped ===

@@ -1,0 +1,25 @@
+==================================================
+RUN STARTED: 2026-01-27 13:37:39
+Run Folder: D:\RaihanFarid\Dokumen\faceRecog\process-run\Run_Process_TowerCPU_Embedding_2026-01-27_13-37-39
+PowerShell Script: process-run-0.ps1
+Virtual Environment: D:\RaihanFarid\Dokumen\faceRecog\.venv
+Python Script: D:\RaihanFarid\Dokumen\faceRecog\run_py\modular\entry_multi-USED-TowerCPU.py
+Arguments: --multi-source
+Number of arguments: 1
+==================================================
+
+Execution started at: 2026-01-27 13:37:39
+"D:\RaihanFarid\Dokumen\faceRecog\.venv\Scripts\python.exe" "D:\RaihanFarid\Dokumen\faceRecog\run_py\modular\entry_multi-USED-TowerCPU.py" --multi-source
+
+
+==================================================
+EXECUTION SUMMARY
+==================================================
+PowerShell Script: process-run-0.ps1
+Exit code: 1
+Start time: 2026-01-27 13:37:39
+End time: 2026-01-27 13:37:49
+Duration: 00:00:09
+Arguments passed to Python script:
+  [0]: -
+No new folders were created by Python script in: D:\RaihanFarid\Dokumen\faceRecog\process-run\Run_Process_TowerCPU_Embedding_2026-01-27_13-37-39\script_output
