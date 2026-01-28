@@ -5,7 +5,7 @@
 
 # ========== CONFIGURATION ==========
 $VENV_ROOT = "C:\raihan\dokumen\project\global-env\faceRecog\.venv"
-$PYTHON_SCRIPT = "C:\raihan\dokumen\project\global-env\faceRecog\run_py\autoEmbedPerson.py"
+$PYTHON_SCRIPT = "C:\raihan\dokumen\project\global-env\faceRecog\run_py\modular\entry_multi-USED-TowerCPU.py"
 $POWERSHELL_SCRIPT_NAME = Split-Path -Leaf $MyInvocation.MyCommand.Path  # Added: Get current script name
 
 # ENHANCED: Use an array for multiple arguments
@@ -60,7 +60,7 @@ if (-not (Test-Path $RUNS_BASE_PATH)) {
 
 # Generate run folder with timestamp
 $timestamp = Get-Date -Format "yyyy-MM-dd_HH-mm-ss"
-$RUN_FOLDER_NAME = "Run_Process_TowerCPU_Embedding_$timestamp"
+$RUN_FOLDER_NAME = "Run_Process_TowerCPU_MaskDetect_$timestamp"
 $RUN_FOLDER_PATH = Join-Path $RUNS_BASE_PATH $RUN_FOLDER_NAME
 
 # Create run folder structure
